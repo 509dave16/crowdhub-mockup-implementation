@@ -1,0 +1,362 @@
+body {
+  margin: 0;
+}
+
+$darkOrange: #E46029;
+$mildOrange: #E8711E;
+$orange: #F3A137;
+$lightOrange: #FACE97;
+
+$darkGray: #333233;
+$gray: #6C6C6C;
+$paleGray: #F6F6F6;
+
+$navHeight: 50px;
+$navWidth: 1024px;
+$navBorderRadius: 2em;
+
+.dark-orange {
+  color: $darkOrange;
+  &-bg {
+    background-color: $darkOrange;
+  }
+}
+
+.mild-orange {
+  color: $mildOrange;
+  &-bg {
+    background-color: $mildOrange;
+  }
+}
+
+.orange {
+  color: $orange;
+  &-bg {
+    background-color: $orange;
+  }
+}
+
+.light-orange {
+  color: $lightOrange;
+  &-bg {
+    background-color: $lightOrange;
+  }
+}
+
+.white {
+  color: white;
+  &-bg {
+    background-color: white;
+  }
+}
+
+.dark-gray {
+  color: $darkGray;
+  &-bg {
+    background-color: $darkGray;
+  }
+}
+
+.gray {
+  color: $gray;
+  &-bg {
+    background-color: $gray;
+  }
+}
+
+.pale-gray {
+  color: $paleGray;
+  &-bg {
+    background-color: $paleGray;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.small-circle {
+  height: $navHeight;
+  width: $navHeight;
+  border-radius: 50%;
+}
+
+.large-circle {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%
+}
+
+.header {
+  background-image: url("./../image/looking-for-people.jpg");
+  background-repeat: no-repeat;
+  height: 260px;
+  background-position: center;
+}
+
+.header-nav-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $navHeight;
+  width: $navWidth;
+  border-radius: $navBorderRadius;
+  margin-top: 10px;
+}
+
+.header-nav > span {
+  color: white;
+}
+
+.donate-button {
+  display: flex;
+  align-items: center;
+  background-color: $orange;
+  color: white;
+  height: $navHeight;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: $navBorderRadius;
+}
+
+.village-wrapper {
+  display: flex;
+  justify-content: center;
+  height: $navHeight;
+}
+
+.village {
+  display: flex;
+  align-items: center;
+  width: $navWidth;
+}
+
+.villages-back-link {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  svg {
+    fill: white;
+  }
+
+  span {
+    margin-left: 10px;
+  }
+}
+
+.village-title {
+  font-size: 30px;
+  font-weight: bold;
+  flex: 1.5;
+}
+
+.village-info-tabs-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.village-info-tabs {
+  display: flex;
+  justify-content: space-between;
+  width: 512px;
+  font-weight: bold;
+  height: $navHeight;
+}
+
+.village-info-tabs > span {
+  display: flex;
+  align-items: center;
+}
+
+.village-info-tabs > span > .tab-text {
+  border-bottom: {
+    color: $orange;
+    style: solid;
+    width: thin;
+  }
+}
+
+.village-info-tabs > span > .badge {
+  align-self: flex-start;
+  background-color: $darkOrange;
+}
+
+.village-info {
+  display: flex;
+  justify-content: space-around;
+  padding-top: $navHeight;
+  padding-bottom: $navHeight;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.update {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+
+.after {
+  align-items: flex-end;
+}
+
+.before {
+  align-items: flex-start;
+  align-self: flex-end;
+}
+
+.update-text {
+  width: 300px;
+  padding-top: 5px;
+  border-top: {
+    color: $orange;
+    style: solid;
+    width: thin;
+  }
+}
+
+.update-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.vertical-ruler {
+  height: 300px;
+  width: 25px;
+}
+
+.connect {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 60px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 512px;
+}
+
+.social-media > img {
+  height: 30px;
+  width: 96px;
+}
+
+.social-media > .icon {
+  fill: $darkOrange;
+  height: 2em;
+}
+
+.the-hub-text {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.subscribe {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-button {
+  display: flex;
+  align-items: center;
+  background-color: $darkOrange;
+  color: white;
+  height: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: $navBorderRadius;
+}
+
+.subscribe-input {
+  border: none;
+  outline: none;
+  height: 25px;
+  border-radius: $navBorderRadius;
+}
+
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.site-map {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-top: 20px;
+  width: 640px;
+
+}
+
+.site-links {
+  display: flex;
+
+  div {
+    flex: 1;
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  h4 {
+    color: $orange;
+  }
+}
+
+.icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+}
+
+.icon-chevron-left {
+  width: calc(0.75em);
+}
+
+.icon-youtube {
+  width: calc(2 * 0.857421875em);
+}
+
+.icon-instagram {
+  width: calc(2 * 0.857421875em);
+}
+
+.icon-vimeo-square {
+  width: calc(2 * 0.857421875em);
+}
+
+.icon-facebook-square {
+  width: calc(2 * 0.857421875em);
+}
+
+.icon-twitter {
+  width: calc(2 * 0.9287109375em);
+}
